@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        max-width: 370px;
+        padding: 15px;
+        margin: 20px auto;
+        background-color: #fff;
+      }
+
+      .input {
+        display: block;
+        width: 100%;
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-family: inherit;
+        font-size: 16px;
+      }
+
+      .app-btn {
+        display: block;
+        width: 100%;
+        padding: 8px 10px;
+        margin: 2rem 0;
+        border: 0.1rem solid #458ff6;
+        border-radius: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        outline: none;
+        color: #458ff6;
+        font-weight: bold;
+        font-family: inherit;
+        font-size: 16px;
+      }
+
+      .app-btn:hover {
+        background-color: #458ff6;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+
+      #errorMessage,
+      #errorMessage-1 {
+        height: 1rem;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form" action="" method="post">
+      <input
+        class="input input-email"
+        type="email"
+        id="email"
+        placeholder="Ваш e-mail*"
+      />
+      <div id="errorMessage"></div>
+
+      <input
+        class="input input-pasword"
+        type="password"
+        id="password"
+        placeholder="Пароль*"
+      />
+      <div id="errorMessage-1"></div>
+      <button type="submit" class="app-btn">Войти</button>
+      <p>Еще не зарегистрированы?</p>
+      <button type="submit" class="app-btn">Зарегистрироваться</button>
+    </form>
+  </body>
+</html>
